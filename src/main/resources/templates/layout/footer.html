@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html layout:decorate="~{layout/layoutMain}" xmlns:layout="http://www.w3.org/1999/xhtml">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,16 +16,8 @@
     </style>
 </head>
 <body>
-<div layout:fragment="content">
-<div>
-    <h3 class="alert alert-danger">사원 명단</h3>
-    <div>
-        <li>
-            <ul>야스오</ul>
-            <ul>요네</ul>
-            <ul>제라스</ul>
-        </li>
-    </div>
+<div th:fragment="footerFragment" style="position: fixed;bottom:0px;text-align: center;width:100%;">
+    <h5 class="alert alert-warning">우리은행  02-1234-5678</h5>
 </div>
 </body>
 </html>
